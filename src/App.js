@@ -31,6 +31,7 @@ function App() {
                       "e")
                     setPersons(e.target.value)
                   }}
+                  defaultValue={persons}
                 />
                 <input
                   type="number"
@@ -43,6 +44,7 @@ function App() {
                       "e")
                     setTotal(e.target.value)
                   }}
+                  defaultValue={total}
                 />
               </div>
             </div>
