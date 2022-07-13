@@ -27,8 +27,7 @@ const ItemGroup = (props) => {
   }
 
 
-  const grouped = totalByGroup(props.restaurants, props.persons, props.total)
-  console.log(grouped, "totalGrouped")
+  const grouped = totalByGroup(props.restaurants, props.persons, props.total).filter(r => r.groups.length > 0)
 
   return grouped.map((res, i) =>
     <div>
