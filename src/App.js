@@ -8,7 +8,6 @@ function App() {
   console.log("restauranst", restaurants)
   const [persons, setPersons] = useState(2)
   const [total, setTotal] = useState(200)
-  const [groupVisible, setGroupVisible] = useState(false)
 
   return (
     <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 flex justify-center flex-col">
@@ -20,6 +19,7 @@ function App() {
           <div class="rounded-md shadow">
             <div>
               <div className="mt-1">
+                <span>Persons</span>
                 <input
                   type="text"
                   name="persons"
@@ -33,6 +33,7 @@ function App() {
                   }}
                   defaultValue={persons}
                 />
+                <span>Budget</span>
                 <input
                   type="number"
                   name="number"
